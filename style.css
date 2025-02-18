@@ -1,3 +1,7 @@
+body{
+    background-color: #E9FDE6;
+}
+
 /***************************
 *         Generellt        *
 ***************************/
@@ -11,19 +15,73 @@
 *          Navbar          *
 ***************************/
 
-navbar {
+.navbar {
     background-color: #AAFC9F;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
 }
 
-navbar #logotyp-i-navbar {
-    height: 50px; /*storlek på logotypen i navbar*/
+.navbar #logotyp-i-navbar {
+    height: 70px; /*storlek på logotypen i navbar*/
 }
 
-navbar button img{
-    height: 50px; /*storlek på ikonerna i navbar*/
+.navbar-ikoner img{
+    height: 35px; /*storlek på ikonerna i navbar*/
+}
+
+.navbar button {
+    background-color: #00000000;
+    border: none;
+}
+
+#meny-i-navbar {
+    margin: 5px; /*gör att knapparna inte är precis bredvid varandra*/
+}
+
+.navbar button:hover {
+    cursor: pointer; /*ändrar muspekare till pointer*/
+    transform: scale(110%);
+}
+
+
+.navbar-länkar {
+    margin: 0 5vw; /*första värdet är top & bottom och andra värdet är left & right*/
+
+    display: none;
+}
+
+.navbar-länkar a {
+    margin: 0 0.5vw; /*första värdet är top & bottom och andra värdet är left & right*/
+}
+
+/***************************
+*       Media queries      *
+***************************/
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+
+/*Desktop*/
+@media (min-width: 1025px) {
+    #meny-i-navbar {
+        visibility: hidden;
+    }
+
+    .navbar-länkar {
+        display: flex;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar-ikoner{
+        margin: 0; /*tar bort marginen på ikonerna som gjorde att knapparna inte är precis vid kanten*/
+    }
 }
