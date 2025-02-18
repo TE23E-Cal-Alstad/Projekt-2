@@ -1,0 +1,29 @@
+/***************************
+*         Generellt        *
+***************************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/***************************
+*          Navbar          *
+***************************/
+
+navbar {
+    background-color: #AAFC9F;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+navbar #logotyp-i-navbar {
+    height: 50px; /*storlek på logotypen i navbar*/
+}
+
+navbar button img{
+    height: 50px; /*storlek på ikonerna i navbar*/
+}
