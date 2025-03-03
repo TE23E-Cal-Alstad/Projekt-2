@@ -56,6 +56,53 @@ body{
 
 .navbar-länkar a {
     margin: 0 0.5vw; /*första värdet är top & bottom och andra värdet är left & right*/
+    text-decoration: none;
+    color: black;
+    
+}
+
+.navbar-länkar :hover{
+    text-decoration: none;
+    color: #ab3c79;
+}
+
+
+/***************************
+*           Main           *
+***************************/
+
+/*Dropdown*/
+#dropdown {
+    display: none;
+    flex-direction: column;
+
+    padding: 0.5vh 0;
+    text-align: center;
+    background-color: #FEC2F4;
+}
+
+#dropdown a {
+    text-decoration: none;
+    color: black;
+}
+
+#dropdown a:hover{
+    text-decoration: none;
+    color: #923267;
+}
+
+#dropdown.klickad {
+    display: flex;
+}
+
+/***************************
+*          Footer          *
+***************************/
+
+footer{
+    background-color: #AAFC9F;
+    text-align: center;
+    padding: 0.5vh 0;
 }
 
 /***************************
