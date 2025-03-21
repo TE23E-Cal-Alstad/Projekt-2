@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Italiana&family=Itim&family=Jacques+Francois&display=swap');
+
 /* Ställer in bakgrundsfärg för hela sidan */
 body {
     background-color: #E9FDE6;
@@ -19,8 +21,10 @@ p {
 }
 
 h1{
+    font-family: "Amarante", serif;
     font-size: medium;
 }
+
 
 /***************************
 *          Navbar          *
@@ -130,9 +134,8 @@ h1{
 .varukorg button {
 
     margin-left: 1vw;
-
     cursor: pointer;
-    width: 5vw;
+    width: 15vw;
     height: 10%;
     background-color: #FEC2F4;
     border: solid 1.5px #923267;
@@ -142,7 +145,26 @@ h1{
     margin-bottom: 2vh;
 }
 
-/* Effekt vid hover på "Lägg till" knappen */
+#kostnad {
+    font-size: 14px;
+    width: 35vw;
+    height: 10%;
+    background-color: #AAFC9F ;
+    border: solid 1.5px #022e13;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    text-align: center;
+
+}
+
+.varukorg li{
+    font-size: 14px;
+}
+
+
+/* Effekt vid hover på "betala" knappen */
 .varukorg button:hover {
     transform: scale(105%);
 }
@@ -233,10 +255,26 @@ footer {
     }
 
     p {
-        font-size: medium;
+        font-size: large;
     }
 
     h1{
+        font-size: x-large;
+    }
+
+    .varukorg button {
+
+        width: 10vw;
+        font-size: 16px;
+    }
+
+    #kostnad {
+        
+        font-size: 20px;
+        width: 30vw;
+    }
+
+    .varukorg li{
         font-size: large;
     }
 }
@@ -248,11 +286,16 @@ footer {
     }
 
     p {
-        font-size: large;
+        font-size: medium;
     }
 
     h1{
         font-size: x-large;
+    }
+
+    .varukorg button {
+
+        width: 5vw;
     }
 
     #meny-i-navbar {
@@ -274,4 +317,14 @@ footer {
     .info {
         display: flex;
     }
+
+    #kostnad {
+        font-size: 16px;
+        width: 15vw;
+    }
+
+    .varukorg li{
+        font-size: 16px;
+    }
+    
 }
