@@ -1,20 +1,20 @@
-
-
-body{
+/* Ställer in bakgrundsfärg för hela sidan */
+body {
     background-color: #E9FDE6;
-    
 }
 
 /***************************
 *         Generellt        *
 ***************************/
 
+/* Nollställer marginaler och padding för alla element */
 * {
     margin: 0;
     padding: 0;
 }
 
-p{
+/* Ställer in standardstorlek på text */
+p {
     font-size: small;
 }
 
@@ -22,9 +22,9 @@ p{
 *          Navbar          *
 ***************************/
 
+/* ändrar stil för navigationsfältet */
 .navbar {
     background-color: #AAFC9F;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,87 +33,91 @@ p{
     font-family: "Jacques Francois", serif;
 }
 
+/* Storlek på logotypen i navbaren */
 .navbar #logotyp-i-navbar {
-    height: 70px; /*storlek på logotypen i navbar*/
+    height: 70px;
 }
 
-.navbar-ikoner img{
-    height: 35px; /*storlek på ikonerna i navbar*/
+/* Storlek på ikoner i navbaren */
+.navbar-ikoner img {
+    height: 35px;
 }
 
+/* Tar bort standardbakgrund och kantlinje på knappar i navbaren */
 .navbar button {
     background-color: #00000000;
     border: none;
 }
 
+/* Ger mellanrum mellan knappar i navbar */
 #meny-i-navbar {
-    margin: 5px; /*gör att knapparna inte är precis bredvid varandra*/
+    margin: 5px;
 }
 
+/* Effekter vid hover på navbar-knappar */
 .navbar button:hover {
-    cursor: pointer; /*ändrar muspekare till pointer*/
+    cursor: pointer;
     transform: scale(110%);
 }
 
-
+/* Döljer navbar-länkar  */
 .navbar-länkar {
-    margin: 0 5vw; /*första värdet är top & bottom och andra värdet är left & right*/
-
+    margin: 0 5vw;
     display: none;
 }
 
+/* ändrar stil för navbar-länkar */
 .navbar-länkar a {
-    margin: 0 0.5vw; /*första värdet är top & bottom och andra värdet är left & right*/
+    margin: 0 0.5vw;
     text-decoration: none;
     color: black;
-    
 }
 
-.navbar-länkar :hover{
+/* Färgändring vid hover på navbar-länkar */
+.navbar-länkar :hover {
     text-decoration: none;
     color: #ab3c79;
 }
-
-
 
 /***************************
 *           Main           *
 ***************************/
 
-/*Dropdown*/
+/* Dropdown-meny döljs som standard */
 #dropdown {
     display: none;
     flex-direction: column;
-
     padding: 0.5vh 0;
     text-align: center;
     background-color: #FEC2F4;
 }
 
+/* ändrar stil för länkar i dropdown menyn */
 #dropdown a {
     text-decoration: none;
     color: black;
 }
 
-#dropdown a:hover{
+/* Färgändring vid hover på dropdown länkar */
+#dropdown a:hover {
     text-decoration: none;
     color: #923267;
 }
 
+/* Visar dropdown-menyn när klassen "klickad" läggs till */
 #dropdown.klickad {
     display: flex;
 }
 
+/* Döljer infoboxen */
 .info {
     display: none;
     flex-direction: column;
-    margin-left: 18vw;
-    margin-right: 18vw;
-    margin-top: 0.5vh ;
-    margin-bottom: 0.5vh;
+    margin: 0.5vh 18vw;
     font-family: "Jacques Francois", serif;
 }
 
+/* Skapar en produktgrid med responsiv layout */
 .produkt-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -125,6 +129,7 @@ p{
     width: 80%;
 }
 
+/* ändrar stil för  produkter */
 .produkt {
     background-color: #36A32710;
     padding: 10px;
@@ -133,14 +138,15 @@ p{
     box-shadow: 5px 5px 10px #00000050;
 }
 
+/* ändrar stil för produktbilder */
 .produkt img {
     width: 80%;
     height: auto;
     border-radius: 4px;
     margin-left: 10%;
-   
 }
 
+/* ändrar stil för produktbeskrivning */
 .produkt p {
     margin: 5px 0;
     font-weight: bold;
@@ -149,8 +155,9 @@ p{
     font-family: "Jacques Francois", serif;
 }
 
-.Lägg-till{
-    cursor: pointer; /*ändrar muspekare till pointer*/
+/* ändrar stil för "Lägg till"-knappen */
+.Lägg-till {
+    cursor: pointer;
     width: 100%;
     height: 10%;
     background-color: #FEC2F4;
@@ -161,7 +168,8 @@ p{
     margin-bottom: 2vh;
 }
 
-.Lägg-till:hover{
+/* Effekt vid hover på "Lägg till" knappen */
+.Lägg-till:hover {
     transform: scale(105%);
 }
 
@@ -169,7 +177,8 @@ p{
 *          Footer          *
 ***************************/
 
-footer{
+/* ändrar stilen på footer */
+footer {
     background-color: #AAFC9F;
     text-align: center;
     padding: 1vh 0;
@@ -179,28 +188,27 @@ footer{
 *       Media queries      *
 ***************************/
 
-/*Tablet*/
+/* Anpassar layout för tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
-
     .produkt-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    p{
+
+    p {
         font-size: medium;
     }
 }
 
-/*Desktop*/
+/* Anpassar layout för desktop */
 @media (min-width: 1025px) {
     .produkt-grid {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    p{
+    p {
         font-size: large;
     }
-    
+
     #meny-i-navbar {
         visibility: hidden;
     }
@@ -213,11 +221,11 @@ footer{
         justify-content: center;
     }
 
-    .navbar-ikoner{
-        margin: 0; /*tar bort marginen på ikonerna som gjorde att knapparna inte är precis vid kanten*/
+    .navbar-ikoner {
+        margin: 0;
     }
 
-    .info{
+    .info {
         display: flex;
     }
 }
