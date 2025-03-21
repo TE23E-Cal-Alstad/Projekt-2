@@ -13,10 +13,10 @@
     <!-- Navbar -->
     <nav class="navbar">
 
-         <!-- loggotyp bild -->
+        <!-- loggotyp bild -->
         <img src="./img/logotyp.webp" alt="Logotyp" id="logotyp-i-navbar">
 
-         <!-- Länkar i navbar -->
+        <!-- Länkar i navbar -->
         <div class="navbar-länkar">
             <a href="https://km.se/">Hem</a>
             <a href="https://sms.schoolsoft.se/nti/jsp/student/right_student_startpage.jsp">Produkter</a>
@@ -24,16 +24,16 @@
             <a href="https://open.spotify.com/?flow_ctx=7d3162d7-2d09-4d8c-a348-23502910e35f%3A1710356612">Om oss</a>
         </div>
 
-         <!-- buttons för varukrg och meny -->
+        <!-- buttons för varukrg och meny -->
         <div class="navbar-ikoner">
             <button onclick="dropdownKlickad()" id="meny-i-navbar"><img src="./img/meny.webp" alt="Meny"></button>
         </div>
     </nav>
 
-     <!-- Main-->
+    <!-- Main-->
     <main>
 
-         <!-- Dropdown för meny med länkar-->
+        <!-- Dropdown för meny med länkar-->
         <div id="dropdown">
             <a href="https://km.se/">Hem</a>
             <a href="https://sms.schoolsoft.se/nti/jsp/student/right_student_startpage.jsp">Produkter</a>
@@ -44,20 +44,27 @@
         <!--Varukorg-->
         <div class="varukorg-container">
             <div class="varukorg">
-                <h1 id="varukorg-titel" >Varukorg</h1>
+                <h1 id="varukorg-titel">Varukorg</h1>
                 <aside>
                     <ul></ul>
                 </aside>
-                    <p id="varukorg-status">Produkter du valt hamnar här</p>
-                    <p id="kostnad"></p>
-                    <button id="knapp-betala">Betala</button>
+                <p id="varukorg-status">Produkter du valt hamnar här</p>
+                <p id="kostnad"></p>
+                <button id="knapp-betala">Betala</button>
             </div>
+        </div>
+
+        <!--Sök fält-->
+        <div class="sök">
+            <input placeholder="Sök bland våra fröer" type="text">
         </div>
 
         <!-- Inforuta med text  -->
         <div class="info">
             <h2 class="info-rubrik">BlomFröer</h2>
-            <p Class="info-text">Blomfröer är nyckeln till en färgsprakande trädgård! Välj mellan ett brett utbud av sorter för att skapa din drömrabatt. Så fröna i näringsrik jord, håll dem fuktiga och se dem gro till vackra blommor. Perfekt för både nybörjare och erfarna odlare!</p>
+            <p Class="info-text">Blomfröer är nyckeln till en färgsprakande trädgård! Välj mellan ett brett utbud av
+                sorter för att skapa din drömrabatt. Så fröna i näringsrik jord, håll dem fuktiga och se dem gro till
+                vackra blommor. Perfekt för både nybörjare och erfarna odlare!</p>
         </div>
 
         <!-- produktgrid -->
@@ -71,7 +78,7 @@
                 <button onclick="läggTill('Stor Blåklocka', 35)" class="Lägg-till">Lägg till i Varukorg</button>
             </div>
 
-              <!-- Produkt 2 -->
+            <!-- Produkt 2 -->
             <div class="produkt">
                 <img src="./img/image (5).webp" alt="Lavendel">
                 <p>Lavendel</p>
@@ -79,7 +86,7 @@
                 <button onclick="läggTill('Lavendel', 35)" class="Lägg-till">Lägg till i Varukorg</button>
             </div>
 
-              <!-- Produkt 3 -->
+            <!-- Produkt 3 -->
             <div class="produkt">
                 <img src="./img/image (3).webp" alt="Skogsförgätmigej">
                 <p>Skogsförgätmigej</p>
@@ -87,49 +94,49 @@
                 <button onclick="läggTill('Skogsförgätmigej', 35)" class="Lägg-till">Lägg till i Varukorg</button>
             </div>
 
-              <!-- Produkt 4 -->
+            <!-- Produkt 4 -->
             <div class="produkt">
                 <img src="./img/image (7).webp" alt="Hängpetunia">
                 <p>Hängpetunia</p>
                 <p>35,00:-</p>
-                <button  onclick="läggTill('Hängpetunia', 35)" class="Lägg-till">Lägg till i Varukorg</button>
+                <button onclick="läggTill('Hängpetunia', 35)" class="Lägg-till">Lägg till i Varukorg</button>
             </div>
 
-              <!-- Produkt 5 -->
+            <!-- Produkt 5 -->
             <div class="produkt">
                 <img src="./img/image (4).webp" alt="Borstnejlika">
                 <p>Borstnejlika</p>
                 <p>35,00:-</p>
-                <button  onclick="läggTill('Borstnejlika', 35)" class="Lägg-till">Lägg till i Varukorg</button>
+                <button onclick="läggTill('Borstnejlika', 35)" class="Lägg-till">Lägg till i Varukorg</button>
             </div>
 
-              <!-- Produkt 6 -->
+            <!-- Produkt 6 -->
             <div class="produkt">
                 <img src="./img/image (6).webp" alt="Petunia">
                 <p>Petunia</p>
                 <p>35,00:-</p>
-                <button  onclick="läggTill('Petunia', 35)" class="Lägg-till">Lägg till i Varukorg</button>
+                <button onclick="läggTill('Petunia', 35)" class="Lägg-till">Lägg till i Varukorg</button>
             </div>
 
-              <!-- Produkt 7 -->
+            <!-- Produkt 7 -->
             <div class="produkt">
                 <img src="./img/image.webp" alt="Cascade Orchid Mix">
                 <p>Cascade Orchid Mix</p>
                 <p>35,00:-</p>
-                <button  onclick="läggTill('Cascade Orchid Mix', 35)" class="Lägg-till">Lägg till i Varukorg</button>
+                <button onclick="läggTill('Cascade Orchid Mix', 35)" class="Lägg-till">Lägg till i Varukorg</button>
             </div>
 
-              <!-- Produkt 8 -->
+            <!-- Produkt 8 -->
             <div class="produkt">
                 <img src="./img/image (1).webp" alt="Luktärt">
                 <p>Luktärt</p>
                 <p>35,00:-</p>
-                <button  onclick="läggTill('Luktärt', 35)" class="Lägg-till">Lägg till i Varukorg</button>
+                <button onclick="läggTill('Luktärt', 35)" class="Lägg-till">Lägg till i Varukorg</button>
             </div>
         </div>
     </main>
 
-      <!-- Footer -->
+    <!-- Footer -->
     <footer>&copy; Frö & Flora</footer>
 
 </body>

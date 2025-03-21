@@ -169,6 +169,13 @@ h1{
     transform: scale(105%);
 }
 
+/*Sök fält*/
+.sök {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
 /* Döljer infoboxen */
 .info {
     display: none;
