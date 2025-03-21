@@ -3,3 +3,6 @@ function dropdownKlickad() {
     dropdownAktiverad.classList.toggle("klickad");
 }
 
+function läggTill(pris, produktnamn) {
+//skriv här
+}
