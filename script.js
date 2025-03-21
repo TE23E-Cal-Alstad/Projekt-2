@@ -34,7 +34,7 @@ function uppdateraVarukorg() {
     let totalKostnad = 0;
 
     if (varukorg.length === 0) {
-        varukorgStatus.textContent = "När du lägger till saker i varukorgen hamnar de här.";
+        varukorgStatus.textContent = "Produkter du valt hamnar här";
     } else {
         varukorgStatus.textContent = ""; // Rensa statusmeddelandet om varukorgen inte är tom
     }
